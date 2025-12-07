@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client Portal - ROVATEK CIVILS CC</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    
+    <header>
+        <div class="logo-container">
+            <img src="29009.jpg" alt="ROVATEK CIVILS CC Logo" class="logo">
+            <h1>Client Portal</h1>
+        </div>
+        <nav>
+            <a href="index.html">Back to Main Site</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="login-section">
+            <h2>Client Login</h2>
+            <form id="login-form">
+                <label for="login-email">Email:</label>
+                <input type="email" id="login-email" required>
+                
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" required>
+                
+                <button type="submit">Log In Securely</button>
+            </form>
+
+            <p class="switch-link">
+                Don't have an account? <a href="#" id="show-register">Register Here</a>
+            </p>
+            
+            <form id="register-form" style="display:none; margin-top: 20px;">
+                <h3>New Client Registration</h3>
+                <label for="register-email">Email:</label>
+                <input type="email" id="register-email" required>
+                
+                <label for="register-password">Password:</label>
+                <input type="password" id="register-password" required>
+                
+                <button type="submit">Create Account</button>
+            </form>
+        </section>
+
+        <section id="upload-section" style="display:none;">
+            <h2>Upload Documents</h2>
+            <p>Welcome back! Use this secure area to upload your necessary registration documents.</p>
+            
+            <input type="file" id="file-input">
+            <button id="upload-button">Start Upload</button>
+            <p id="upload-status"></p>
+        </section>
+
+        <section id="contact-form-section">
+            <h2>General Inquiry Form</h2>
+            <form action="https://formspree.io/f/YOUR_FORMSPREE_ENDPOINT" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" name="name" required>
+                
+                <label for="email">Your Email:</label>
+                <input type="email" name="_replyto" required>
+                
+                <label for="message">Message:</label>
+                <textarea name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send Inquiry</button>
+            </form>
+            <small>Need faster help? Call Simon or Etuhole directly (numbers on main site).</small>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 ROVATEK CIVILS CC. Client Portal.</p>
+    </footer>
+
+    <script src="app.js"></script> 
+</body>
+</html>
